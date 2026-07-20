@@ -222,36 +222,128 @@ Chinese (Native), English (Proficient), Norwegian (Proficient), German (Working 
 
 </div>
 
-<div class="craft-grid">
-	<article class="project-card craft-card">
-		<span class="number">01</span>
+<div class="creative-sections">
 
-		<h3>Nature-inspired Crafts</h3>
+	<section class="creative-block">
+		<div class="creative-title">
+			<span class="number">01</span>
+			<h3>Nature-inspired Crafts</h3>
+			<p>
+				Handmade creations inspired by plants, animals, and natural forms.
+			</p>
+		</div>
 
-		<p>
-		</p>
-
-		<a href="/crafts">
-			View crafts →
-		</a>
-	</article>
-
-	<article class="project-card craft-card">
+		<div class="image-gallery">
+			<img
+				src="/images/crafts/1.png"
+				alt="Nature-inspired handmade craft"
+				loading="lazy"
+			/>
+			<img
+				src="/images/crafts/2.png"
+				alt="Handmade floral craft"
+				loading="lazy"
+			/>
+			<img
+				src="/images/crafts/3.png"
+				alt="Nature-inspired decorative craft"
+				loading="lazy"
+			/>
+						<img
+				src="/images/crafts/4.png"
+				alt="Nature-inspired decorative craft"
+				loading="lazy"
+			/>
+						<img
+				src="/images/crafts/5.png"
+				alt="Nature-inspired decorative craft"
+				loading="lazy"
+			/>
+						<img
+				src="/images/crafts/6.png"
+				alt="Nature-inspired decorative craft"
+				loading="lazy"
+			/>
+		</div>
+	</section>
+	<section class="creative-block">
+	<div class="creative-title">
 		<span class="number">02</span>
 
-		<h3>Photography of nature</h3>
+		<h3>Photography of Nature</h3>
 
 		<p>
-			
+			A collection of photographs capturing landscapes, wildlife, plants,
+			and everyday moments in nature.
 		</p>
+	</div>
 
-		<a href="/crafts">
-			View gallery →
-		</a>
-	</article>
+	<p class="image-gallery">
+				<img
+			src="/images/photography/1.png"
+			alt="Landscape"
+			loading="lazy"
+		/>
+						<img
+			src="/images/photography/2.png"
+			alt="Landscape"
+			loading="lazy"
+		/>
+						<img
+			src="/images/photography/3.png"
+			alt="Landscape"
+			loading="lazy"
+		/>
+						<img
+			src="/images/photography/4.png"
+			alt="Landscape"
+			loading="lazy"
+		/>
+						<img
+			src="/images/photography/5.png"
+			alt="Landscape"
+			loading="lazy"
+		/>
+						<img
+			src="/images/photography/6.png"
+			alt="Landscape"
+			loading="lazy"
+		/>
+						<img
+			src="/images/photography/7.png"
+			alt="Landscape"
+			loading="lazy"
+		/>
+						<img
+			src="/images/photography/8.png"
+			alt="Landscape"
+			loading="lazy"
+		/>
+						<img
+			src="/images/photography/9.png"
+			alt="Landscape"
+			loading="lazy"
+		/>
+								<img
+			src="/images/photography/10.png"
+			alt="Landscape"
+			loading="lazy"
+		/>
+								<img
+			src="/images/photography/11.png"
+			alt="Landscape"
+			loading="lazy"
+		/>
+								<img
+			src="/images/photography/12.png"
+			alt="Landscape"
+			loading="lazy"
+		/>
+	</p>
+</section>
 </div>
 
-			<section class="section" id="experience">
+<section class="section" id="experience">
 				<div class="section-heading">
 				</div>
 
@@ -526,7 +618,39 @@ h1 {
 	.timeline {
 		border-top: 1px solid #d7d3cb;
 	}
+.creative-sections {
+	display: grid;
+	gap: 48px;
+}
 
+.creative-block {
+	padding: 32px;
+	background: white;
+	border: 1px solid #dedad2;
+}
+
+.creative-title {
+	margin-bottom: 28px;
+}
+
+.creative-title .number {
+	display: block;
+	margin-bottom: 14px;
+}
+
+.image-gallery {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 16px;
+}
+
+.image-gallery img {
+	width: 100%;
+	aspect-ratio: 1 / 1;
+	object-fit: contain;
+	display: block;
+	border-radius: 8px;
+}
 	.timeline-item {
 		padding: 38px 0;
 		display: grid;
