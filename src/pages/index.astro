@@ -197,34 +197,28 @@ Chinese (Native), English (Proficient), Norwegian (Proficient), German (Working 
 		src="/images/labgallery/1.jpeg"
 		alt="Radar tracking field experiment with honeybees"
 	/>
-
 	<img
 		src="/images/labgallery/8.JPG"
 		alt="Honeybee field research"
 	/>
-
 	<img
 		src="/images/labgallery/2.JPG"
 		alt="Experimental equipment used for honeybee research"
 	/>
-
 	<img
 		src="/images/labgallery/4.JPG"
 		alt="Honeybee behavioural experiment"
 	/>
-
 	<img
 		src="/images/labgallery/6.JPG"
 		alt="Research field cabin"
 	/>
-
 	<img
 		class="wide-image"
 		src="/images/labgallery/7.jpeg"
 		alt="Research team"
 	/>
 </div>
-
 
 <p class="publication-heading">
     Selected publications
@@ -719,10 +713,15 @@ h1 {
 		font-weight: 700;
 	}
 
+.ethology-card {
+	grid-column: 1 / -1;
+}
+
 .ethology-gallery {
 	width: 100%;
 	display: grid;
-	grid-template-columns: repeat(2, minmax(0, 1fr));
+	grid-template-columns: repeat(3, minmax(0, 1fr));
+	grid-auto-rows: 180px;
 	gap: 14px;
 	margin: 20px 0;
 }
@@ -730,19 +729,20 @@ h1 {
 .ethology-gallery img {
 	display: block;
 	width: 100%;
-	height: 180px;
+	height: 100%;
+	min-width: 0;
 	object-fit: cover;
 	border-radius: 8px;
 }
 
 .ethology-gallery .featured-image {
-	grid-column: 1 / -1;
-	height: 320px;
+	grid-column: span 2;
+	grid-row: span 2;
 }
 
 .ethology-gallery .wide-image {
-	grid-column: 1 / -1;
-	height: 240px;
+	grid-column: auto;
+	height: 100%;
 }
 
 .publication-heading{
