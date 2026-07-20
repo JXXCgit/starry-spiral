@@ -112,7 +112,7 @@ Chinese (Native), English (Proficient), Norwegian (Proficient), German (Working 
 						</p>
 
 						<a href={} target="_blank" rel="noopener noreferrer">
-							View project →
+							Coming soon →
 						</a>
 					</article>
 
@@ -125,9 +125,14 @@ Chinese (Native), English (Proficient), Norwegian (Proficient), German (Working 
 						Pathogens, cross-species virus transmission, and colony health
 						</p>
 
-						<a href={} target="_blank" rel="noopener noreferrer">
-							View project →
-						</a>
+<a
+	href="https://journals.asm.org/doi/full/10.1128/aem.03292-15"
+	target="_blank"
+	rel="noopener noreferrer"
+>
+	Read publication →
+</a>
+						
 					</article>
 
 					<article class="project-card">
@@ -137,27 +142,126 @@ Chinese (Native), English (Proficient), Norwegian (Proficient), German (Working 
 						<p>
 							Screening of Chinese herbal medicine against microsporadia diseases
 						</p>
+<a
+	href="https://www.sciencedirect.com/science/article/abs/pii/S1226861519301542"
+	target="_blank"
+	rel="noopener noreferrer"
+>
+	Read publication →
+</a>
 
-						<a href={} target="_blank" rel="noopener noreferrer">
-							View project →
-						</a>
-					</article>
-										<article class="project-card">
-						<span class="number">02</span>
+<a
+	href="https://patents.google.com/patent/CN104940291A/en?inventor=%E9%99%88%E7%A7%80%E8%B4%A4&oq=%E9%99%88%E7%A7%80%E8%B4%A4"
+	target="_blank"
+	rel="noopener noreferrer"
+>
+	Read publication →
+</a>
 
-						<h3>Ethology</h3>
+<a
+	href="https://patents.google.com/patent/CN104940307B/en?inventor=%E9%99%88%E7%A7%80%E8%B4%A4&oq=%E9%99%88%E7%A7%80%E8%B4%A4"
+	target="_blank"
+	rel="noopener noreferrer"
+>
+	Read publication →
+</a>
+
+<a
+	href="https://patents.google.com/patent/CN104706694A/en?inventor=%E9%99%88%E7%A7%80%E8%B4%A4&oq=%E9%99%88%E7%A7%80%E8%B4%A4"
+	target="_blank"
+	rel="noopener noreferrer"
+>
+	Read publication →
+</a>
+
+<a
+	href="https://patents.google.com/patent/CN104435405A/en?inventor=%E9%99%88%E7%A7%80%E8%B4%A4&oq=%E9%99%88%E7%A7%80%E8%B4%A4"
+	target="_blank"
+	rel="noopener noreferrer"
+>
+	Read publication →
+</a>
+</article>
+<article class="project-card">
+<span class="number">02</span>
+
+<h3>Ethology</h3>
 
 						<p>
 						Life history of social communication (waggle dance) and navigation in honeybees
 						</p>
 
-						<a href={} target="_blank" rel="noopener noreferrer">
-							View project →
-						</a>
+<div class="ethology-gallery">
+	<img
+		class="featured-image"
+		src="/images/labgallery/1.jpeg"
+		alt="Radar tracking field experiment with honeybees"
+	/>
+
+	<img
+		src="/images/labgallery/8.JPG"
+		alt="Honeybee field research"
+	/>
+
+	<img
+		src="/images/labgallery/2.JPG"
+		alt="Experimental equipment used for honeybee research"
+	/>
+
+	<img
+		src="/images/labgallery/4.JPG"
+		alt="Honeybee behavioural experiment"
+	/>
+
+	<img
+		src="/images/labgallery/6.JPG"
+		alt="Research field cabin"
+	/>
+
+	<img
+		class="wide-image"
+		src="/images/labgallery/7.jpeg"
+		alt="Research team"
+	/>
+</div>
+
+
+<p class="publication-heading">
+    Selected publications
+</p>
+<a
+	href="https://www.pnas.org/doi/abs/10.1073/pnas.2213068120"
+	target="_blank"
+	rel="noopener noreferrer"
+>
+	Read publication →
+</a>
+
+<a
+	href="https://www.cell.com/current-biology/fulltext/S0960-9822(25)01121-2"
+	target="_blank"
+	rel="noopener noreferrer"
+>
+	Read publication →
+</a>
+
+<a
+	href="https://link.springer.com/article/10.1007/s00265-025-03593-5"
+	target="_blank"
+	rel="noopener noreferrer"
+>
+	Read publication →
+</a>
 					</article>
+
+
+					
 				        <article class="project-card">
             <h3>Human Neuroscience</h3>
             <p>Spatial memory and social cognition in human brain.</p>
+									<a href={} target="_blank" rel="noopener noreferrer">
+							Coming soon→
+						</a>
         </article>	
 				
 				</div>
@@ -189,7 +293,7 @@ Chinese (Native), English (Proficient), Norwegian (Proficient), German (Working 
 		</ul>
 
 		<a href={} target="_blank" rel="noopener noreferrer">
-			View projects →
+			Coming soon →
 		</a>
 	</article>
 
@@ -212,7 +316,7 @@ Chinese (Native), English (Proficient), Norwegian (Proficient), German (Working 
 		</ul>
 
 		<a href={} target="_blank" rel="noopener noreferrer">
-			View projects →
+			Coming soon →
 		</a>
 	</article>
 </div>
@@ -615,6 +719,37 @@ h1 {
 		font-weight: 700;
 	}
 
+.ethology-gallery {
+	width: 100%;
+	display: grid;
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+	gap: 14px;
+	margin: 20px 0;
+}
+
+.ethology-gallery img {
+	display: block;
+	width: 100%;
+	height: 180px;
+	object-fit: cover;
+	border-radius: 8px;
+}
+
+.ethology-gallery .featured-image {
+	grid-column: 1 / -1;
+	height: 320px;
+}
+
+.ethology-gallery .wide-image {
+	grid-column: 1 / -1;
+	height: 240px;
+}
+
+.publication-heading{
+    margin:10px 0;
+    font-weight:bold;
+    color:#222;
+}
 	.timeline {
 		border-top: 1px solid #d7d3cb;
 	}
